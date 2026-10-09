@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dajug752vocmm"]
+
+[ext_resource type="PackedScene" uid="uid://ddknn30v4a1nm" path="res://Scenes/player.tscn" id="1_jjgbg"]
+
+[node name="Main" type="Node2D" unique_id=2019007254]
+
+[node name="World" type="Node2D" parent="." unique_id=333102806]
+
+[node name="Rooms" type="Node2D" parent="World" unique_id=55378564]
+
+[node name="Entities" type="Node2D" parent="World" unique_id=1316472782]
+
+[node name="Player" parent="World/Entities" unique_id=873541185 instance=ExtResource("1_jjgbg")]
+
+[node name="Enemies" type="Node2D" parent="World/Entities" unique_id=37444287]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1450450872]
+
+[node name="HUD" type="Control" parent="CanvasLayer" unique_id=1967402055]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
